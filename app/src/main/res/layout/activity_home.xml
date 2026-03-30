@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_light">
+
+    <!-- Toolbar -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/secondary"
+        android:elevation="4dp" />
+
+    <!-- Contenedor de los dos fragmentos lado a lado -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <!-- Fragment Maestro (lista) -->
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentMaster"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <!-- Divisor -->
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/primary" />
+
+        <!-- Fragment Detalle -->
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentDetail"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</LinearLayout>

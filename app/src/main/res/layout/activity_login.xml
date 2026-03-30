@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center">
+
+
+
+
+    <!-- Logo -->
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:src="@drawable/bytecom"
+        android:contentDescription="Logo Bytesw"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Campo Usuario -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_usuario"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginBottom="16dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Campo Contraseña -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_password"
+        app:passwordToggleEnabled="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginBottom="24dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Botón Ingresar -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnIngresar"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_ingresar"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/primary"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Ir a Registro -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnIrRegistro"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_ir_registro"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:textColor="@color/primary" />
+
+
+
+</LinearLayout>
